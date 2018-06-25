@@ -1,0 +1,80 @@
+#Ques1
+
+class Animal():
+    def Animal_attribute(self):
+        print("dog")
+class Tiger(Animal):
+    print("cat")
+t=Tiger()
+t.Animal_attribute()
+
+#QUES2
+
+#print a.f(),b.f()=A,B
+
+#QUES3
+
+class Cop():
+    def __init__(self,name,age,work,experience,designation):
+        self.n=name
+        self.a=age
+        self.w=work
+        self.e=experience
+        self.d=designation
+    def add(self):
+        print("details are")
+    def display(self):
+        print("name=:" + self.n)
+        print("age=:" + self.a)
+        print("work=:" + self.w)
+        print("experience:" + self.e)
+        print("designation:" + self.d)
+
+    def update(self,name,age,work,experience,designation):
+        self.z=name
+        self.x=age
+        self.c=work
+        self.v=experience
+        self.b=designation
+        print("name=:"+self.z)
+        print("age=:"+self.x)
+        print("work=:"+self.c)
+        print("experience=:"+self.v)
+        print("designation:"+self.b)
+class Mission(Cop):
+    print("following details are:")
+m=Mission("shivangi",str(21),"work for navy","no experience","navy")
+m.add()
+m.display()
+m.update("shivangi",str(21),"work for army","5 missions","army")
+
+#QUES4
+
+class Shape():
+    def __init__(self,length,breadth):
+        self.l=length
+        self.b=breadth
+class Rectangle(Shape):
+    def Area1(self):
+        rectangle=self.l*self.b
+        print(rectangle)
+class Square(Rectangle):
+    def Area2(self):
+        square=self.l*4
+        print(square )
+s=Square(3,3)
+s.Area1()
+s.Area2()
+
+
+
+
+
+
+
+
+
+
+
+
+
